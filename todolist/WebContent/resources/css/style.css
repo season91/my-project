@@ -1,0 +1,86 @@
+@charset "UTF-8";
+body{
+	display: flex;
+	min-height:100vh;
+	/* align은 height를 지정해줘야 발동함. */
+	align-items: center; 
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.clock *{
+	font-size:2vw;
+	text-align: center;
+	
+}
+
+input{
+	font-size: 2vw;
+	border: 0 none;
+	border-radius: 2vw;
+	width:40vw;
+	padding: 1vw 1vw;
+	outline : none;
+}
+
+.center{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	padding:2vw 5vw;
+	background-color: rgba(0,0,0,0.3);
+}
+
+.center .inp_name{
+	background: none;
+	border:none;
+	color:white;
+	font-size: 4vw;
+	border-bottom: 3px solid rgba(255,255,255,0.8);
+	margin-bottom: 20px;
+}
+
+.inp_name::placeholder{
+	color:white;
+}
+
+.name{
+	font-size: 5vw;
+	margin-bottom: 30px;
+	
+}
+
+.to-do_add{
+	margin-bottom: 1.5vw;
+}
+
+.to-do{
+	font-size :1.5vw;
+	line-height: 1.5;	
+}
+
+.location{
+	/* 투명도 */
+	opacity: 0.7; 
+	font-style: italic;
+	font-size: 2vw;
+	/* 좌하단보내기 */
+	position:absolute;
+	left:2vw;
+	bottom: 2vw;
+}
+
+.location:hover{
+	opacity: 1;
+}
+
+.weather{
+	position: absolute;
+	font-style: italic;
+	font-size: 2vw;
+	/* 우상단 보내기 */
+	right:2vw;
+	top:2vw
+}
